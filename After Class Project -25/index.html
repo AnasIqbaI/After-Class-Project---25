@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>After Class Project - 25</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    </head>
+    <body>
+      <header>
+            <h2 class="logo">ACP 25</h2>
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Category</a>
+                <a href="#">Class</a>
+                <button class="btnLogin-popup">Dashboard</button>
+            </nav>
+      </header>
+    <div class="random-box" id="randomBox"></div>
+    <script>
+      
+      let count = 0;
+      let numbers = [];
+      while (count < 5) {
+        let num = Math.floor(Math.random() * 100) + 1;
+        numbers.push(num);
+        count++;
+      }
+      document.getElementById('randomBox').innerText = numbers.join(', ');
+    </script>
+</body>
+</html>
